@@ -9,6 +9,16 @@ This project implements a Convolutional Neural Network (CNN) to classify brain M
 The goal of this project is to evaluate the effectiveness of deep learning models in distinguishing between visually similar brain tumor types using
 grayscale MRI data.
 
+## Repository Structure
+
+├── Brain_tumor_SamayAsubadin.py   # Model training script  
+├── model_analysis.ipynb           # Evaluation and visualization  
+├── images/                        # Result figures  
+├── requirements.txt               # Dependencies  
+├── .gitignore                     # Ignored files  
+└── README.md
+
+
 ## Model
 - Framework: TensorFlow / Keras
 - Input: 224×224 grayscale MRI images
@@ -66,3 +76,8 @@ Install dependencies, train the model, and run analysis and visualization:
 pip install -r requirements.txt
 python Brain_tumor_SamayAsubadin.py
 notebook analysis.ipynb 
+```
+
+## Reproducibility
+
+Due to randomness in weight initialization and data shuffling, exact results may vary slightly across runs.
